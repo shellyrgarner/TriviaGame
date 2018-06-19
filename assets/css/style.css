@@ -1,7 +1,54 @@
+body {
+    background: #000000;
+    color: whitesmoke;
+    /* text-align: right; */
+    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+/* font-family: 'Indie Flower', cursive; */
+box-sizing: border-box;
+}
+
 .hide {
     display: none;
 }
 
 #hide {
     display: none;
+}
+
+/* centered columns styles */
+ .row-centered {
+    text-align:center;
+    padding-top: 15px;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix  */
+    margin-right:-4px;
+    text-align: center; 
+    /* background-color: #ccc;  */
+    /* border: 1px solid #ddd;  */
+ } 
+
+
+
+.startBtn {
+    font-family: 'Nunito', sans-serif;
+    background: #eb94d0;
+    background-image: -webkit-linear-gradient(top, #ebd5e4, #2079b0);
+  background-image: -moz-linear-gradient(top, #ebd5e4, #2079b0);
+  background-image: -ms-linear-gradient(top, #ebd5e4, #2079b0);
+  background-image: -o-linear-gradient(top, #ebd5e4, #2079b0);
+  background-image: linear-gradient(to bottom, #ebd5e4, #2079b0);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+text-shadow: 3px 2px 1px #9daef5;
+  -webkit-box-shadow: 6px 5px 24px #666666;
+  -moz-box-shadow: 6px 5px 24px #666666;
+  box-shadow: 6px 5px 24px #666666;
+
 }
