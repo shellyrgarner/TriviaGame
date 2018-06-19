@@ -16,7 +16,7 @@ function startQuestions() {
 
     $(".hide").show();
 
-    var totalTime = 20;
+    var totalTime = 30;
     var timeStop = setInterval(timer, 1000);
     function timer() {
 
