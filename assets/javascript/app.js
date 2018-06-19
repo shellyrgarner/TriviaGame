@@ -1,6 +1,5 @@
 $(document).ready(function () {
 
-    //start-button is click event
     $(".startBtn").on("click", function () {
         $(this).hide();
 
