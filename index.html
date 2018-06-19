@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <!-- CSS style sheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="container mt-4">
+
+        <div class="row">
+            <div class="col=md-12">
+                <h1>Let's Play A Trivia Game!!</h1>
+                <button type="button" class="startBtn btn-default btn-lg btn-primary startBtn">START!</button>
+            </div>
+
+            <!-- <div class="startBtn"> -->
+            <div id="time-left"></div>
+            <!-- <div id="correct"></div> -->
+            <!-- <div id="wrong"></div> -->
+            <!-- <div id="unanswered"></div> -->
+
+            <div id="hide">
+                <h2>Correct:
+                    <span id="correct"></span>
+                </h2>
+                <h2>Incorrect:
+                    <span id="wrong"></span>
+                </h2>
+            </div>
+
+        </div>
+
+        <div class="hide">
+            <div id="questions" class="row">
+                <div class="col=md-12">
+                    <p>1. Where can you go to see the Northern Lights?</p>
+                    <form class="options">
+                        <input type="radio" name="q1" value="false">Alabama</input>
+                        <input type="radio" name="q1" value="false">Suriname</input>
+                        <input type="radio" name="q1" value="true">Greenland</input>
+                    </form>
+                </div>
+            </div>
+
+            <div id="questions" class="row">
+                <div class="col=md-12">
+                    <p>2. Which sea animal is called the unicorn of the sea?</p>
+                    <form class="options">
+                        <input type="radio" name="q2" value="false">dolphin</input>
+                        <input type="radio" name="q2" value="false">whale</input>
+                        <input type="radio" name="q2" value="true">narwhal</input>
+                    </form>
+                </div>
+            </div>
+
+            <div id="questions" class="row">
+                <div class="col=md-12">
+                    <p>3. Where is the Blue Lagoon located?</p>
+                    <form class="options">
+                        <input type="radio" name="q3" value="false">Hawaii</input>
+                        <input type="radio" name="q3" value="true">Iceland</input>
+                        <input type="radio" name="q3" value="false">Bahamas</input>
+                    </form>
+                </div>
+            </div>
+
+            <div id="questions" class="row">
+                <div class="col=md-12">
+                    <p>4. Which artist released the album titled Purple Rain?</p>
+                    <form class="options">
+                        <input type="radio" name="q4" value="false">Elton John</input>
+                        <input type="radio" name="q4" value="true">Prince</input>
+                        <input type="radio" name="q4" value="false">Michael Jackson</input>
+                    </form>
+                </div>
+            </div>
+
+            <div id="questions" class="row">
+                <div class="col=md-12">
+                    <p>5. Who starred in the CNN travel and food show called Parts Unknown?</p>
+                    <form class="options">
+                        <input type="radio" name="q5" value="true">Anthony Bourdain</input>
+                        <input type="radio" name="q5" value="false">Anthony Anderson</input>
+                        <input type="radio" name="q5" value="false">Andrew Zimmern</input>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- <script>
+        $(document).ready(function () {
+
+            //start-button is click event
+            $(".startBtn").on("click", function () {
+                $(this).hide();
+
+                // $( ".hide" ).show();
+                // $(.h1).hide();
+
+                startQuestions();
+                // setTimer();      
+
+            });
+        });
+
+        function startQuestions() {
+
+            $(".hide").show();
+
+            var totalTime = 5;
+            var timeStop = setInterval(timer, 1000);
+            function timer() {
+
+                if (totalTime == -1) {
+
+                    // console.log("done");
+                    $("#time-left").append("<h2>Time's Up!</h2>");
+                    $(".hide").hide();
+                    clearInterval(timeStop);
+                    results();
+                }
+                else {
+                    $("#time-left").html("<h2>Time Remaining: " + totalTime + " Seconds</h2>");
+                    totalTime--;
+                }
+            };
+        };
+
+        function results() {
+            var correctAnswers = 0;
+            var wrongAnswers = 0;
+
+            if ($('input[name=q1]:checked').val() == "true") {
+                correctAnswers++;
+            } else if ($('input[name=q1]:checked').val() == "false") {
+                wrongAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            if ($('input[name=q2]:checked').val() == "true") {
+                correctAnswers++;
+            } else if ($('input[name=q2]:checked').val() == "false") {
+                wrongAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            if ($('input[name=q3]:checked').val() == "true") {
+                correctAnswers++;
+            } else if ($('input[name=q3]:checked').val() == "false") {
+                wrongAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            if ($('input[name=q4]:checked').val() == "true") {
+                correctAnswers++;
+            } else if ($('input[name=q4]:checked').val() == "false") {
+                wrongAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            if ($('input[name=q5]:checked').val() == "true") {
+                correctAnswers++;
+            } else if ($('input[name=q5]:checked').val() == "false") {
+                wrongAnswers++;
+            } else {
+                wrongAnswers++;
+            }
+
+            //  $("#correct").html("<h2>Correct:</h2> " + correctAnswers);
+            //  $("#wrong").append("<h2>Wrong:</h2> " + wrongAnswers);
+
+            $("#hide").show();
+            $("#correct").html(correctAnswers);
+            $("#wrong").append(wrongAnswers);
+        }
+
+
+
+
+
+
+    </script> -->
+ <!-- Script -->
+  <script type="text/javascript" src="assets/javascript/app.js"></script> 
+
+</body>
+
+</html>
