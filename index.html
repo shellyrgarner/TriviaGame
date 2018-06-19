@@ -10,7 +10,7 @@
     <!-- google fonts -->
     <!-- <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Nunito" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-<!-- Bootstrap -->
+    <!-- Bootstrap -->
     <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"> -->
     <!-- jQuery -->
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,34 +18,34 @@
 
 <body>
 
-    <div class="container mt-4">
+    <div class="container">
 
         <div class="row  row-centered">
             <div class="col=md-12">
                 <h1>Let's Play A Trivia Game!!</h1>
                 <button type="button" class="startBtn btn-primary btn-lg">START!</button>
                 <!-- <button type="button" class="btn btn-primary">Primary</button> -->
-            
 
-            <!-- <div class="startBtn"> -->
-            <div id="time-left"></div>
-            <!-- <div id="correct"></div> -->
-            <!-- <div id="wrong"></div> -->
-            <!-- <div id="unanswered"></div> -->
 
-            <div id="hide">
-                <h2>Correct:
-                    <span id="correct"></span>
-                </h2>
-                <h2>Incorrect:
-                    <span id="wrong"></span>
-                </h2>
+                <!-- <div class="startBtn"> -->
+                <div id="time-left"></div>
+                <!-- <div id="correct"></div> -->
+                <!-- <div id="wrong"></div> -->
+                <!-- <div id="unanswered"></div> -->
+
+                <div id="hide">
+                    <h2>Correct:
+                        <span id="correct"></span>
+                    </h2>
+                    <h2>Incorrect:
+                        <span id="wrong"></span>
+                    </h2>
+                </div>
             </div>
-        </div>
 
         </div>
 
-        <div class="hide">
+        <div class="hide" id="qbox">
             <div id="questions" class="row row-centered">
                 <div class="col=md-12 col-centered">
                     <p>1. Where can you go to see the Northern Lights?</p>
@@ -103,104 +103,6 @@
         </div>
     </div>
 
-
-    <!-- <script>
-        $(document).ready(function () {
-
-            //start-button is click event
-            $(".startBtn").on("click", function () {
-                $(this).hide();
-
-                // $( ".hide" ).show();
-                // $(.h1).hide();
-
-                startQuestions();
-                // setTimer();      
-
-            });
-        });
-
-        function startQuestions() {
-
-            $(".hide").show();
-
-            var totalTime = 5;
-            var timeStop = setInterval(timer, 1000);
-            function timer() {
-
-                if (totalTime == -1) {
-
-                    // console.log("done");
-                    $("#time-left").append("<h2>Time's Up!</h2>");
-                    $(".hide").hide();
-                    clearInterval(timeStop);
-                    results();
-                }
-                else {
-                    $("#time-left").html("<h2>Time Remaining: " + totalTime + " Seconds</h2>");
-                    totalTime--;
-                }
-            };
-        };
-
-        function results() {
-            var correctAnswers = 0;
-            var wrongAnswers = 0;
-
-            if ($('input[name=q1]:checked').val() == "true") {
-                correctAnswers++;
-            } else if ($('input[name=q1]:checked').val() == "false") {
-                wrongAnswers++;
-            } else {
-                wrongAnswers++;
-            }
-
-            if ($('input[name=q2]:checked').val() == "true") {
-                correctAnswers++;
-            } else if ($('input[name=q2]:checked').val() == "false") {
-                wrongAnswers++;
-            } else {
-                wrongAnswers++;
-            }
-
-            if ($('input[name=q3]:checked').val() == "true") {
-                correctAnswers++;
-            } else if ($('input[name=q3]:checked').val() == "false") {
-                wrongAnswers++;
-            } else {
-                wrongAnswers++;
-            }
-
-            if ($('input[name=q4]:checked').val() == "true") {
-                correctAnswers++;
-            } else if ($('input[name=q4]:checked').val() == "false") {
-                wrongAnswers++;
-            } else {
-                wrongAnswers++;
-            }
-
-            if ($('input[name=q5]:checked').val() == "true") {
-                correctAnswers++;
-            } else if ($('input[name=q5]:checked').val() == "false") {
-                wrongAnswers++;
-            } else {
-                wrongAnswers++;
-            }
-
-            //  $("#correct").html("<h2>Correct:</h2> " + correctAnswers);
-            //  $("#wrong").append("<h2>Wrong:</h2> " + wrongAnswers);
-
-            $("#hide").show();
-            $("#correct").html(correctAnswers);
-            $("#wrong").append(wrongAnswers);
-        }
-
-
-
-
-
-
-    </script> -->
     <!-- Script -->
     <script type="text/javascript" src="assets/javascript/app.js"></script>
 
